@@ -150,22 +150,24 @@
 \fi
 
 \newfontfamily\bengalifont[%
+    Path=./fonts/,
 	Script=Bengali,%
 	Scale=\bm@scale,%
 	NFSSFamily=\bm@@name,%
 	WordSpace=\bm@wordspace,%
 	AutoFakeSlant,
 	AutoFakeBold=2.5
-	]{[\bm@name]}
+	]{\bm@name}
 
 \newfontfamily\bengalifonttt[%
+    Path=./fonts/,
 	Script=Bengali,%
 	Scale=\btt@scale,%
 	NFSSFamily=\btt@@name,
 	WordSpace=\btt@wordspace,%
 	AutoFakeSlant,
 	AutoFakeBold
-	]{[\btt@name]}
+	]{\btt@name}
 
 \newenvironment{latin}{\fontencoding{OT1}\ifx\f@family\btt@@name\fontfamily{lmtt}\else\fontfamily{lmr}\fi\selectfont}\relax
 
